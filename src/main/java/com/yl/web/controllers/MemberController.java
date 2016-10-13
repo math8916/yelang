@@ -14,41 +14,31 @@ public class MemberController {
 	@RequestMapping("/main")
 	public String goMain(){
 		logger.info("Welcome home! The client locale is 1111{}", "디버깅 모드");
-		return "member:member/content.tiles";
+		return "public:public/content.tiles";
 	}
 	@RequestMapping("/header")
 	public String memberHeader(){
 		logger.info("----- member_CONTOLLER HEADER PASS -----");
 		return "member/header.jsp";
 	}
-	@RequestMapping("/nav")
+	@RequestMapping("/word")
 	public String memberNav(){
 		logger.info("----- member_CONTOLLER NAV PASS -----");
-		return "member/nav.jsp";
+		return "public:member/word.tiles";
 	}
-	@RequestMapping("/chart")
+	@RequestMapping("/events")
 	public String memberChart(){
 		logger.info("----- member_CONTOLLER chart -----");
-		return "member:member/chart.tiles";
+		return "public:member/events.tiles";
 	}	
-	@RequestMapping("/list")
-	public String memberList(){
-		logger.info("----- member_CONTOLLER list -----");
-		return "member:member/list.tiles";
+	@RequestMapping("/university")
+	public String memberUniversity(){
+		logger.info("----- member_CONTOLLER university -----");
+		return "public:member/university.tiles";
 	}
-	@RequestMapping("/r-list")
-	public String memberRevList(){
+	@RequestMapping("/families")
+	public String memberFamilies(){
 		logger.info("----- member_CONTOLLER list -----");
-		return "member:member/r-list.tiles";
-	}
-	@RequestMapping("/h-list")
-	public String memberHouseList(){
-		logger.info("----- member_CONTOLLER list -----");
-		return "member:member/h-list.tiles";
-	}
-	@RequestMapping("/search")
-	public String memberSearch(){
-		logger.info("----- member_CONTOLLER search -----");
-		return "member:member/search.tiles";
+		return "public:member/families.tiles";
 	}
 }

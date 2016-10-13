@@ -7,19 +7,39 @@
 <c:set var="img" value="${context}/resources/img" />
 <c:set var="css" value="${context}/resources/css" />
 <c:set var="js" value="${context}/resources/js"/>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<title><tiles:getAsString name="title"/></title>
-	<link rel="stylesheet" href="${css}/application.css" type="text/css"/>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>True Church</title>
 
-	<header>
-		<div id="pub_header">
-			<tiles:insertAttribute name="header" /> 	
-		</div>
-	</header>
+		<!-- Loading third party fonts -->
+		<link href="${fonts}/novecento-font/novecento-font.css" rel="stylesheet" type="text/css">
+		<link href="${fonts}/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="${css}/style.css">
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+		<div class="site-content">
+			<header class="site-header">
+				<div id="pub_header" class="container">
+					<tiles:insertAttribute name="header" /> 	
+				</div>
+			</header> <!-- .site-header -->
+
+	
 	<section>
 		<article id="pub_article">
 			<tiles:insertAttribute name="body" /> 
