@@ -15,18 +15,18 @@
 					<li data-bg-image="${img}/slide-1.jpg">
 						<div class="container">
 							<div class="slide-content">
-								<small class="slide-subtitle">True Church</small>
-								<h2 class="slide-title">Place with a real love</h2>
+								<small class="slide-subtitle" align="left">예랑교회</small>
+								<h2 class="slide-title" align="left" >Place with a real love</h2>
 
 								<a href="#" class="button">See our families</a>
 							</div>
 						</div>
 					</li>
 
-					<li data-bg-image="${img}/slide-1.jpg">
+					<li data-bg-image="${img}/slide-2.jpg">
 						<div class="container">
 							<div class="slide-content">
-								<small class="slide-subtitle">True Church</small>
+								<small class="slide-subtitle">믿음의교회</small>
 								<h2 class="slide-title">Place with a real love</h2>
 
 								<a href="#" class="button">See our families</a>
